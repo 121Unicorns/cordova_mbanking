@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="box">
+      <div class="form">
+        <div class="logoimg">
+          <img class="img" src="./img/logo.png"/>
+          <h1 style="color: white;">M-Banking</h1>
+        </div>
+        <div class="inputBox">
+          <input type="text" required />
+          <span>Account Number</span>
+          <i></i>
+        </div>
+        <div class="inputBox">
+          <input type="password" required />
+          <span>PIN</span>
+          <i></i>
+        </div>
+        <div class="links">
+          <a href="#">Forget password</a>
+        </div>
+        <input type="submit" value="Login" id="submitBtn"/>
+
+        <script>
+          document.getElementById("submitBtn").addEventListener("click", myFunction);
+          function myFunction() {
+            window.location.href="./index.html";
+          }
+        </script>
+      </div>
+    </div>
+  </body>
+</html>
